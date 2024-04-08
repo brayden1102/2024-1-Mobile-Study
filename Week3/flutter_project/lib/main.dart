@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 import 'package:table_calendar/table_calendar.dart';
+import 'package:material_symbols_icons/material_symbols_icons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -125,7 +125,7 @@ class MyHomePage extends StatelessWidget {
                           color: Colors.white.withOpacity(0),
                         ),
                         child: Icon(
-                          Icons.book,
+                          Symbols.book,
                           size: 60,
                         )
                       )],
@@ -187,11 +187,7 @@ class MyHomePage extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0),
                         ),
-                        child: Transform(
-                            alignment: Alignment.center,
-                            transform: Matrix4.rotationY(math.pi),
-                            child: Icon(Icons.collections_bookmark, size: 60, color: Colors.black,),
-                        )
+                        child: Icon(Symbols.collections_bookmark, size: 60,)
                       )],
                   )
                 ],
